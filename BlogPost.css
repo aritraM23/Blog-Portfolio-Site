@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+:root{
+    --font: 'Lora', serif;
+}
+.wrapper {
+    max-width: -webkit-calc(800px - (30px * 2));
+    max-width: calc(800px - (30px * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 30px;
+    padding-left: 30px
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        max-width: -webkit-calc(800px - (30px));
+        max-width: calc(800px - (30px));
+        padding-right: 15px;
+        padding-left: 15px
+    }
+}
+
+.wrapper:after,
+.footer-col-wrapper:after {
+    content: "";
+    display: table;
+    clear: both
+}
+
+.icon>svg {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    margin-right: .2em;
+}
+
+.icon>svg path {
+    fill: #828282
+}
+
+.social-media-list .icon {
+    padding-right: 5px
+}
+
+.social-media-list li+li {
+    padding-top: 5px
+}
+
+.site-header {
+    padding-top: -1em;
+    min-height: 55.95px;
+    position: relative
+}
+
+.site-title {
+    font-family: var(--font);
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 54px;
+    margin-bottom: 0;
+    margin-left: -1.1em;
+    float: left;
+}
+
+.site-title,
+.site-title:visited {
+    color: #424242
+} 
+.site-header {
+    border-top: 5px solid white;
+    border-bottom: 1px solid #e8e8e8;
+    min-height: 55.95px;
+    position: relative
+}
+
+.site-title {
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 54px;
+    margin-bottom: 0;
+    float: left
+}
+
+.site-title,
+.site-title:visited {
+    color: #424242
+} 
+
+.site-nav {
+    float: right;
+    line-height: 54px;
+}
+.site-nav .nav-trigger {
+    display: none
+}
+
+.site-nav .menu-icon {
+    display: none
+}
+
+.site-nav .page-link {
+    font-family: var(--font);
+    margin-left: 18px;
+    color: #111;
+    line-height: 1.5
+}
+
+.site-nav .page-link:not(:last-child) {
+    margin-right: 8px
+}
+
+@media screen and (max-width: 600px) {
+    .site-nav {
+        position: absolute;
+        top: 9px;
+        right: 15px;
+        background-color: #fdfdfd;
+        border: 1px solid #e8e8e8;
+        border-radius: 5px;
+        text-align: right
+    }
+    .site-nav label[for="nav-trigger"] {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 36px;
+        z-index: 2;
+        cursor: pointer
+    }
+    .site-nav .menu-icon {
+        display: block;
+        float: right;
+        width: 36px;
+        height: 26px;
+        line-height: 0;
+        padding-top: 10px;
+        text-align: center
+    }
+    .site-nav .menu-icon>svg path {
+        fill: #424242
+    }
+    .site-nav input~.trigger {
+        clear: both;
+        display: none
+    }
+    .site-nav input:checked~.trigger {
+        display: block;
+        padding-bottom: 5px;
+    }
+    .site-nav .page-link {
+        display: block;
+        padding: 5px 10px;
+        margin-left: 20px
+    }
+    .site-nav .page-link:not(:last-child) {
+        margin-right: 0
+    }
+}
+#Share{
+    font-size: 20px;
+    margin-left: 0.3em;
+}
+
+.share-btn {
+    display: inline-block;
+    color: #ffffff;
+    border: none;
+    padding: 0.1em 0.6em;
+    outline: none;
+    text-align: center;
+    font-size: 0.9em;
+    margin: 0 0.2em;
+  }
+  
+  .share-btn:focus,
+  .share-btn:hover {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+  
+  .share-btn:active {
+    color: #e2e2e2;
+  }
+  
+  .share-btn.twitter     { background: #55acee; }
+  .share-btn.linkedin    { background: #4875B4; }
+  .share-btn.email       { background: #444444; }
